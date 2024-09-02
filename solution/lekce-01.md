@@ -16,20 +16,7 @@ Tady zatím nic není :)
 
 </details>
 
-## 2 - Jednoduchý vstup
-Teď už budeme chtít, aby náš program dokázal získat vstup od uživatele.
-
-Napište program **jmeno.py**, který získá jméno a příjmení od uživatele voláním funkce input(). Vypište je na obrazovku podobně jako v předchozím cvičení.
-Nechte uživatele zadat také věk. Pozor na to, že funkce input() vždy vrací řetězec, ale my chceme v proměnné vek mít číslo. Použijte tedy funkci int(), abyste převedli uživatelem zadaný řetězec na číslo. Opět vypište na obrazovku jméno, příjmení a věk tak jako v předchozí verzi.
-
-<details>
-<summary><b>Řešení</b></summary>
-
-Tady zatím nic není :) 
-
-</details>
-
-## 3 - Házení kostkami
+## 2 - Házení kostkami
 Napište program **kostky.py**, který bude simulovat hod dvěma klasickými šestistěnnými kostkami. Jeho výstupu bude součet bodů na těchto dvou kostkách.
 
 Nápověda:
@@ -44,7 +31,7 @@ Tady zatím nic není :)
 
 </details>
 
-## 4 - Generátor čísel
+## 3 - Generátor čísel
 Napište program **generator.py**, který si od uživatele vyžádá dvě celá čísla - dolní mez a horní mez - a vypíše na výstup náhodné číslo v zadaných mezích.
 
 <details>
