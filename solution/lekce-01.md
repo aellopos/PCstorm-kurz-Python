@@ -12,7 +12,17 @@ Upravte dále program tak, že do proměnné hodina uložíte hodinu konání p�
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :) 
+```Python
+print("Divadlo Pěst na oko")
+
+nazev = "Zkrocení zlé ženy"
+cas = "19:30"
+print(f"{nazev} - {cas}")
+
+hodina = 19
+minuta = 30
+print(f"{nazev} - {hodina}:{minuta:02d}")
+```
 
 </details>
 
@@ -27,7 +37,14 @@ Nápověda:
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :) 
+```Python
+import random
+kostka1 = random.randint(1, 6)
+kostka2 = random.randint(1, 6)
+soucet = kostka1 + kostka2
+print(f"Součet hodů kostkami: {soucet}")
+
+```
 
 </details>
 
@@ -37,6 +54,33 @@ Napište program **generator.py**, kde zadáte dolní mez a horní mez do promě
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :) 
+```Python
+dolni_mez = 1
+horni_mez = 100
+nahodne_cislo = random.randint(dolni_mez, horni_mez)
+print(f"Náhodné číslo mezi {dolni_mez} a {horni_mez} je {nahodne_cislo}")
+
+```
+
+</details>
+
+## 4 - Jednoduchý vstup
+Teď už budeme chtít, aby náš program dokázal získat vstup od uživatele.
+
+Napište program **jmeno.py**, který získá jméno a příjmení od uživatele voláním funkce input(). Vypište je na obrazovku podobně jako v předchozím cvičení.
+Nechte uživatele zadat také věk. Pozor na to, že funkce input() vždy vrací řetězec, ale my chceme v proměnné vek mít číslo. Použijte tedy funkci int(), abyste převedli uživatelem zadaný řetězec na číslo. Opět vypište na obrazovku jméno, příjmení a věk tak jako v předchozí verzi.
+
+<details>
+<summary><b>Řešení</b></summary>
+
+
+```Python
+jmeno = "Jan"
+prijmeni = "Novák"
+vek = int(input("zadej vek: "))  
+print(f"{jmeno} {prijmeni}, {vek} let")
+```
+
+
 
 </details>
