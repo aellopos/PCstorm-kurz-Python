@@ -20,7 +20,23 @@ pohyby = [1200, -250, -800, 540, 721, -613, -222]
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```python
+# Třetí pohyb
+print(pohyby[2])
+
+# Všechny pohyby kromě prvních dvou
+print(pohyby[2:])
+
+# Celkový počet pohybů
+print(len(pohyby))
+
+# Nejvyšší a nejnižší pohyb
+print(max(pohyby))
+print(min(pohyby))
+
+# Celkový přírůstek
+print(sum(pohyby))
+```
 
 </details>
 
@@ -33,7 +49,12 @@ Mějme proměnnou s, ve které předpokládáme uložený nějaký seznam. Sesta
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```python
+# Výpočet průměru
+s = [4, 7, 9, 10, 5]
+prumer = sum(s) / len(s)
+print(prumer)
+```
 
 </details>
 
@@ -47,7 +68,11 @@ Uložte si do proměnné jmeno svoje jméno. Pomocí volání vhodných metod je
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```python
+jmeno = "Jan Novák"
+print(jmeno.lower())
+print(jmeno.upper())
+```
 
 </details>
 
@@ -82,7 +107,9 @@ Napiš program, který zjistí následující:
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```python
+
+```
 
 </details>
 
@@ -96,7 +123,14 @@ Vytvoř slovník, který reprezentuje vysvědčení. Klíč slovníku bude náze
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```python
+vysvedceni = {
+    "český jazyk": 1,
+    "matematika": 2,
+    "dějepis": 1
+}
+print(vysvedceni)
+```
 
 </details>
 
@@ -119,30 +153,15 @@ U knihy "Vrah zavolá v deset" zvyš počet prodaných kusů o 100.
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
-
-</details>
-
-## 2 - Detektivky
-
-Vydavatel detektivek si eviduje prodané kusy u jednotlivých knih. V následujícím slovníku najdeš tři knihy a u každé z nich je počet prodaných kusů.
-
 ```python
-sales = {
-    "Zkus mě chytit": 4165,
-    "Vrah zavolá v deset": 5681,
-    "Zločinný steh": 2565,
-}
+# Přidání nové knihy
+sales["Noc, která mě zabila"] = 0
+
+# Zvýšení prodeje
+sales["Vrah zavolá v deset"] += 100
+
+print(sales)
 ```
-
-Zkopíruj si slovník do svého programu.
-Přidej do slovníku nově vydanou detektivku "Noc, která mě zabila", která zatím nebyla uvedena na trh, je tedy prodáno 0 kusů.
-U knihy "Vrah zavolá v deset" zvyš počet prodaných kusů o 100.
-
-<details>
-<summary><b>Řešení</b></summary>
-
-Tady zatím nic není :)
 
 </details>
 
@@ -170,6 +189,13 @@ Zkontroluj, zda je číslo lístku ve slovníku. Pokud ne, vypiš text "Bohužel
 <details>
 <summary><b>Řešení</b></summary>
 
-Tady zatím nic není :)
+```python
+cislo = int(input("Zadejte číslo vašeho lístku: "))
+
+if cislo in tombola:
+    print(f"Vyhrál jsi: {tombola[cislo]}")
+else:
+    print("Bohužel nevyhráváš nic.")
+```
 
 </details>
