@@ -135,6 +135,7 @@ Nechte uživatele zadat na příkazovém řádku hodinovou mzdu. Spočítejte a 
 ```python
 Tady zatím nic není :)
 ```
+</details>
 
 ## 2 - Počet slov
 
@@ -151,6 +152,7 @@ Vypište na výstup celkový počet všech slov v souboru
 ```python
 Tady zatím nic není :)
 ```
+</details>
 
 ## 3 - Půjčovna
 
@@ -166,3 +168,4 @@ Napište program, který na výstup vypíše součet všech ujetých kilometrů.
 ```python
 Tady zatím nic není :)
 ```
+</details>
