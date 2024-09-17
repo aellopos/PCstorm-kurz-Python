@@ -20,7 +20,18 @@ U každého bodu si klidně ověř že tvůj aktuální kus kódu dělá to co m
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :)
+import json
+
+with open('zavod.json', encoding='utf-8') as file:
+    runners = json.load(file)
+
+finishers = []
+
+for runner in runners:
+    if runner['casy']['oficialni'] != 'DNF':
+        finishers.append(runner['jmeno'])
+
+print(finishers)
 ```
 
 </details>
@@ -75,7 +86,31 @@ Stáhněte si soubor [kurz.json](./assets/kurz.json) s výše uvedeným obsahem 
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :)
+import json
+
+with open('in.txt', encoding='utf-8') as f:
+    data = json.load(f)
+
+print(data['konani'][-1]['ucastnic'])
+
+print(data['konani'][0]['koucove'][-1])
+
+print(len(data['konani']))
+
+mista = []
+for konani in data['konani']:
+    mista.append(konani['misto'])
+print(mista)
+
+ucastnice = 0
+for konani in data['konani']:
+    ucastnice += konani['ucastnic']
+print(ucastnice)
+
+koucove = set()
+for konani in data['konani']:
+    koucove.update(set(konani['koucove']))
+print(koucove)
 ```
 
 </details>
