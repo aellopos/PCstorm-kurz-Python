@@ -21,21 +21,7 @@ pohyby = [1200, -250, -800, 540, 721, -613, -222]
 <summary><b>Řešení</b></summary>
 
 ```python
-# Třetí pohyb
-print(pohyby[2])
-
-# Všechny pohyby kromě prvních dvou
-print(pohyby[2:])
-
-# Celkový počet pohybů
-print(len(pohyby))
-
-# Nejvyšší a nejnižší pohyb
-print(max(pohyby))
-print(min(pohyby))
-
-# Celkový přírůstek
-print(sum(pohyby))
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -50,10 +36,7 @@ Mějme proměnnou s, ve které předpokládáme uložený nějaký seznam. Sesta
 <summary><b>Řešení</b></summary>
 
 ```python
-# Výpočet průměru
-s = [4, 7, 9, 10, 5]
-prumer = sum(s) / len(s)
-print(prumer)
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -69,9 +52,7 @@ Uložte si do proměnné jmeno svoje jméno. Pomocí volání vhodných metod je
 <summary><b>Řešení</b></summary>
 
 ```python
-jmeno = "Jan Novák"
-print(jmeno.lower())
-print(jmeno.upper())
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -124,12 +105,7 @@ Vytvoř slovník, který reprezentuje vysvědčení. Klíč slovníku bude náze
 <summary><b>Řešení</b></summary>
 
 ```python
-vysvedceni = {
-    "český jazyk": 1,
-    "matematika": 2,
-    "dějepis": 1
-}
-print(vysvedceni)
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -154,13 +130,7 @@ U knihy "Vrah zavolá v deset" zvyš počet prodaných kusů o 100.
 <summary><b>Řešení</b></summary>
 
 ```python
-# Přidání nové knihy
-sales["Noc, která mě zabila"] = 0
-
-# Zvýšení prodeje
-sales["Vrah zavolá v deset"] += 100
-
-print(sales)
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -190,12 +160,7 @@ Zkontroluj, zda je číslo lístku ve slovníku. Pokud ne, vypiš text "Bohužel
 <summary><b>Řešení</b></summary>
 
 ```python
-cislo = int(input("Zadejte číslo vašeho lístku: "))
-
-if cislo in tombola:
-    print(f"Vyhrál jsi: {tombola[cislo]}")
-else:
-    print("Bohužel nevyhráváš nic.")
+Tady zatím řešení není :)
 ```
 
 </details>

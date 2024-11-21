@@ -13,15 +13,7 @@ Upravte dále program tak, že do proměnné hodina uložíte hodinu konání p�
 <summary><b>Řešení</b></summary>
 
 ```Python
-print("Divadlo Pěst na oko")
-
-nazev = "Zkrocení zlé ženy"
-cas = "19:30"
-print(f"{nazev} - {cas}")
-
-hodina = 19
-minuta = 30
-print(f"{nazev} - {hodina}:{minuta:02d}")
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -38,12 +30,7 @@ Nápověda:
 <summary><b>Řešení</b></summary>
 
 ```Python
-import random
-kostka1 = random.randint(1, 6)
-kostka2 = random.randint(1, 6)
-soucet = kostka1 + kostka2
-print(f"Součet hodů kostkami: {soucet}")
-
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -55,11 +42,7 @@ Napište program **generator.py**, kde zadáte dolní mez a horní mez do promě
 <summary><b>Řešení</b></summary>
 
 ```Python
-dolni_mez = 1
-horni_mez = 100
-nahodne_cislo = random.randint(dolni_mez, horni_mez)
-print(f"Náhodné číslo mezi {dolni_mez} a {horni_mez} je {nahodne_cislo}")
-
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -75,10 +58,7 @@ Nechte uživatele zadat také věk. Pozor na to, že funkce input() vždy vrací
 
 
 ```Python
-jmeno = "Jan"
-prijmeni = "Novák"
-vek = int(input("zadej vek: "))  
-print(f"{jmeno} {prijmeni}, {vek} let")
+Tady zatím řešení není :)
 ```
 
 

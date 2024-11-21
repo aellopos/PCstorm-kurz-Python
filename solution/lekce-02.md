@@ -11,12 +11,7 @@ Na konec programu vlož příkaz, který se uživatele zeptá na věk. Pokud je 
 <summary><b>Řešení</b></summary>
 
 ```Python
-uzivatelske_jmeno = input("Zadejte uživatelské jméno: ")
-heslo = input("Zadejte heslo: ")
-
-if heslo != "simsalabim":
-    print("Vstup nepovolen")
-    exit()
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -37,20 +32,7 @@ Nakonec spočtenou cenu vypište s nějakou hezkou zprávou na výstup.
 <summary><b>Řešení</b></summary>
 
 ```Python
-plnaCena = 12
-
-vek = int(input("Zadejte svůj věk: "))
-
-if vek < 6:
-    cena = 0
-elif vek <= 26:
-    cena = round(0.65 * plnaCena, 2)
-elif ek <= 64:
-    cena = plnaCena
-else:
-    cena = round(0.5 * plnaCena, 2)
-
-print(f"Cena vaší vstupenky je {cena} euro. Děkujeme za nákup!")
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -63,17 +45,7 @@ Založte si program **registrace.py**. Program nechá uživatele, aby si zvolil 
 <summary><b>Řešení</b></summary>
 
 ```Python
-uzivatelske_jmeno = input("Zadejte uživatelské jméno: ")
-heslo1 = input("Zadejte heslo: ")
-
-if len(heslo1) > 8:
-    heslo2 = input("Zadejte heslo znovu pro potvrzení: ")
-    if heslo1 == heslo2:
-        print("Registrace úspěšná. Vítejte, " + uzivatelske_jmeno + "!")
-    else:
-        print("Hesla nejsou stejná. Zkuste to znovu.")
-else:
-    print("Heslo musí být delší než 8 znaků.")
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -88,12 +60,7 @@ Vytvořte nový program **jmeno.py**. Do proměnné jmeno uložte svoje celé jm
 <summary><b>Řešení</b></summary>
 
 ```Python
-jmeno = "František Novák"
-
-print(f"Třetí znak: {jmeno[2]}")  # 'a'
-print(f"Pátý znak: {jmeno[4]}")  # 't'
-print(f"Sedmý znak: {jmeno[6]}")  # 'š'
-
+Tady zatím řešení není :)
 ```
 
 
@@ -110,18 +77,7 @@ Vytvořte nový program **seznam.py**. V tomto programu vytvořte následující
 <summary><b>Řešení</b></summary>
 
 ```Python
-divaci = [120, 150, 130, 145, 160]
-zaplnenost = [0.9, 0.85, 0.95, 0.80, 0.75]
-hry = ["Hamlet", "Romeo a Julie", "Válka s mloky", "Faust", "Othello"]
-druha_hra = hry[1]  # "Romeo a Julie"
-
-hodnoceni = [
-    ["Divadelní noviny", 8],
-    ["Scéna", 7],
-    ["Kultura21", 9],
-    ["Theatrolog", 6]
-]
-
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -133,17 +89,7 @@ Založte si program **heslo.py**. Ověřování hesla se někdy dělá tak, že 
 <summary><b>Řešení</b></summary>
 
 ```Python
-heslo = "bezpecneHeslo123"
-
-druhy_znak = input("Zadejte druhý znak vašeho hesla: ")
-paty_znak = input("Zadejte pátý znak vašeho hesla: ")
-sedmy_znak = input("Zadejte sedmý znak vašeho hesla: ")
-
-if (druhy_znak == heslo[1] and paty_znak == heslo[4] and sedmy_znak == heslo[6]):
-    print("Heslo ověřeno, vstup povolen.")
-else:
-    print("Nesprávné znaky, vstup nepovolen.")
-
+Tady zatím řešení není :)
 ```
 
 </details>

@@ -26,8 +26,7 @@ hodnoceni = [7, 9, 6, 7, 9, 8]
 <summary><b>Řešení</b></summary>
 
 ```python
-for h in hodnoceni:
-    print(f"{h}/10")
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -59,12 +58,7 @@ hesla = [
 <summary><b>Řešení</b></summary>
 
 ```python
-for heslo in hesla:
-    print(heslo)
-
-for heslo in hesla:
-    if len(heslo) > 8:
-        print(heslo)
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -96,11 +90,7 @@ mesice = [
 <summary><b>Řešení</b></summary>
 
 ```python
-for mesic in mesice:
-    print(mesic[0])
-
-for mesic in mesice:
-    print(mesic[1])
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -112,10 +102,7 @@ Napište cyklus, který projde zadaný seznam desetinných čísel a spočítá 
 <summary><b>Řešení</b></summary>
 
 ```python
-soucet = sum(cisla)
-pocet = len(cisla)
-prumer = soucet / pocet
-print(f"Průměr: {prumer}")
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -149,17 +136,7 @@ hry = [
 <summary><b>Řešení</b></summary>
 
 ```python
-for hra in hry:
-    print(hra[0])
-
-for hra in hry:
-    if hra[1] > 120:
-        print(hra[0])
-
-for hra in hry:
-    hodiny = hra[1] // 60
-    minuty = hra[1] % 60
-    print(f"{hra[0]} trvá {hodiny} hodin a {minuty} minut")
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -174,11 +151,7 @@ Napiš funkci mult, která bude mít dva číselné parametry. Funkce oba parame
 <summary><b>Řešení</b></summary>
 
 ```python
-def mult(a, b):
-    return a * b
-
-vysledek = mult(4, 5)
-print(vysledek)
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -192,14 +165,7 @@ Funkci vyzkoušej se zadáním dvou i jedné hodnoty, např. total_price(3), tot
 <summary><b>Řešení</b></summary>
 
 ```python
-def total_price(persons, breakfast=False):
-    cena = persons * 850
-    if breakfast:
-        cena += persons * 125
-    return cena
-
-print(total_price(3))
-print(total_price(2, True))
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -213,12 +179,7 @@ Využij funkci z matematického modulu.
 <summary><b>Řešení</b></summary>
 
 ```python
-import math
-
-def faktorial(n):
-    return math.factorial(n)
-
-print(faktorial(5))
+Tady zatím řešení není :)
 ```
 
 </details>
@@ -241,14 +202,7 @@ Bonus: Znak, kterým se má text obalit, bude zadán také jako parametr.
 <summary><b>Řešení</b></summary>
 
 ```python
-def ramecek(text, znak='*'):
-    delka = len(text) + 4
-    print(znak * delka)
-    print(f"{znak} {text} {znak}")
-    print(znak * delka)
-
-ramecek("ahoj")
-ramecek("ahoj", "#")
+Tady zatím řešení není :)
 ```
 
 </details>
