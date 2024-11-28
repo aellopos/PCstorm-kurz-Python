@@ -141,6 +141,19 @@ Tady zatím řešení není :)
 
 </details>
 
+## 6 - Největší prvek
+
+Napište cyklus, který projde zadaný seznam celých čísel a najde v něm největší hodnotu.
+
+<details>
+<summary><b>Řešení</b></summary>
+
+```python
+Tady zatím řešení není :)
+```
+
+</details>
+
 ## Cvičení - funkce 
 ---
 
