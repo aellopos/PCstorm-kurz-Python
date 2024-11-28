@@ -26,7 +26,8 @@ hodnoceni = [7, 9, 6, 7, 9, 8]
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+for h in hodnoceni:
+    print(f"{h}/10")
 ```
 
 </details>
@@ -58,7 +59,12 @@ hesla = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+for heslo in hesla:
+    print(heslo)
+
+for heslo in hesla:
+    if len(heslo) > 8:
+        print(heslo)
 ```
 
 </details>
@@ -90,7 +96,11 @@ mesice = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+for mesic in mesice:
+    print(mesic[0])
+
+for mesic in mesice:
+    print(mesic[1])
 ```
 
 </details>
@@ -102,7 +112,10 @@ Napište cyklus, který projde zadaný seznam desetinných čísel a spočítá 
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+soucet = sum(cisla)
+pocet = len(cisla)
+prumer = soucet / pocet
+print(f"Průměr: {prumer}")
 ```
 
 </details>
@@ -136,20 +149,17 @@ hry = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
-```
+for hra in hry:
+    print(hra[0])
 
-</details>
+for hra in hry:
+    if hra[1] > 120:
+        print(hra[0])
 
-## 6 - Největší prvek
-
-Napište cyklus, který projde zadaný seznam celých čísel a najde v něm největší hodnotu.
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-Tady zatím řešení není :)
+for hra in hry:
+    hodiny = hra[1] // 60
+    minuty = hra[1] % 60
+    print(f"{hra[0]} trvá {hodiny} hodin a {minuty} minut")
 ```
 
 </details>
@@ -164,7 +174,11 @@ Napiš funkci mult, která bude mít dva číselné parametry. Funkce oba parame
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+def mult(a, b):
+    return a * b
+
+vysledek = mult(4, 5)
+print(vysledek)
 ```
 
 </details>
@@ -178,7 +192,14 @@ Funkci vyzkoušej se zadáním dvou i jedné hodnoty, např. total_price(3), tot
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+def total_price(persons, breakfast=False):
+    cena = persons * 850
+    if breakfast:
+        cena += persons * 125
+    return cena
+
+print(total_price(3))
+print(total_price(2, True))
 ```
 
 </details>
@@ -192,7 +213,12 @@ Využij funkci z matematického modulu.
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+import math
+
+def faktorial(n):
+    return math.factorial(n)
+
+print(faktorial(5))
 ```
 
 </details>
@@ -215,7 +241,14 @@ Bonus: Znak, kterým se má text obalit, bude zadán také jako parametr.
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+def ramecek(text, znak='*'):
+    delka = len(text) + 4
+    print(znak * delka)
+    print(f"{znak} {text} {znak}")
+    print(znak * delka)
+
+ramecek("ahoj")
+ramecek("ahoj", "#")
 ```
 
 </details>
