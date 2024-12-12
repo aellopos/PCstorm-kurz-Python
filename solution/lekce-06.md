@@ -79,3 +79,33 @@ Tady zatím řešení není :)
 ```
 
 </details>
+
+## 3 - Transformace dat
+
+Stáhněte si soubor [words.txt](./assets/words.txt) a zpracujte z něj výstupní soubor ve formátu JSON obsahující slovník. Klíče budou písmena a hodnoty seznamy slov, které začínají písmenem v klíči. Pokud na nějaké písmeno žádná slova nezačínají, tak ve výstupu toto písmeno nebude. Seřaďte tyto seznamy podle abecedy. Zajistěte, aby i klíče ve výstupním JSON souboru byly seřazeny a data byla odsazena čtyřmi mezerami pro lepší čitelnost člověkem.
+
+Vzorový výstup: [output.json](./assets/output.json).
+
+<details>
+<summary><b>Nápověda</b></summary>
+
+- Vytvořím si prázdný slovník, do kterého budu vytvářet požadovaný výstup
+- Otevřu si vstupní soubor a budu ho načítat v cyklu po řádcích
+- Zbavím se znaku pro nový řádek v každém slově
+- Zjistím si první písmeno slova
+- Pokud písmeno není klíčem slovníku, tak tento záznam vytvořím a jako hodnotu vložím seznam s tímto slovem
+- Jinak slovo připojím na konec existujícího seznamu slov
+- Po zpracování celého vstupu seřadím seznamy slov na všech klíčích
+- Výstupní slovník zapíšu do souboru ve formátu JSON
+- V dokumentaci musím najít, jak zajistím, aby byl výstup hezky odsazovaný o 4 mezery a klíče slovníku byly seřazené
+
+</details>
+
+<details>
+<summary><b>Řešení</b></summary>
+
+```python
+Tady zatím řešení není :)
+```
+
+</details>
