@@ -28,7 +28,13 @@ school_report = {
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+prumerna_znamka = sum(vysvedceni.values()) / len(vysvedceni)
+print(f'Průměrná známka je: {prumerna_znamka}')
+
+print('Předměty s jedničkou:')
+for predmet, znamka in vysvedceni.items():
+    if znamka == 1:
+        print('\t' + predmet)
 ```
 
 </details>
@@ -58,7 +64,20 @@ books = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+pocet_stran = 0
+for kniha in knihy:
+    pocet_stran += kniha['pocet_stran']
+
+# NOTE: nebo lépe
+# pocet_stran = sum(kniha['pocet_stran'] for kniha in knihy)
+
+print(f'Přečetl {pocet_stran} stran.')
+
+pocet_nad_osm = 0
+for kniha in knihy:
+    if kniha['hodnoceni'] >= 8:
+        pocet_nad_osm += 1
+print(f'Počet knih s hodnocením >= 8: {pocet_nad_osm}')
 ```
 
 </details>
@@ -80,7 +99,10 @@ plates = {"4A2 3000": "František Novák",
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+print('Lidé z Plzeňského kraje:')
+for spz, jmeno in spzetky.items():
+    if spz[1] == 'P':
+        print(f'- {jmeno}')
 ```
 
 </details>
@@ -114,7 +136,13 @@ Uložte si tuto strukturu do proměnné recept na začátek nového programu. Vy
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+celkem = 0
+for ingredience in recept['ingredience']:
+    cena_text = ingredience[-1]
+    cena = float(cena_text.split(' ')[0])
+    celkem += cena
+
+print(f'recept stojí celkem {celkem} Kč')
 ```
 
 </details>
@@ -133,7 +161,23 @@ Nechte uživatele zadat na příkazovém řádku hodinovou mzdu. Spočítejte a 
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+import statistics
+
+with open('vykaz.txt') as file:
+    vykaz = []
+    for hodnota in file:
+        vykaz.append(int(hodnota))
+
+print(vykaz)
+
+hodinovka = int(input('Zadej hodinovou mzdu: '))
+
+vyplaty = []
+for pocet_hodin in vykaz:
+    vyplaty.append(pocet_hodin * hodinovka)
+    
+print(f'Vyplata za cely rok je {sum(vyplaty)}, průměrná {statistics.mean(vyplaty)}')
+
 ```
 </details>
 
@@ -150,7 +194,19 @@ Vypište na výstup celkový počet všech slov v souboru
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+seznam_radku = []
+with open('slohovka.txt', encoding='utf-8') as file:
+    for radek in file:
+        seznam_radku.append(radek.split())  # pridame rovnou rozsekany radek
+
+celkovy_pocet_slov = 0
+print('pocty radku')
+for radek in seznam_radku:
+    pocet_slov_v_radku = len(radek)
+    print(pocet_slov_v_radku)
+    celkovy_pocet_slov += pocet_slov_v_radku
+
+print(f'celkovy pocet slov je {celkovy_pocet_slov}')
 ```
 </details>
 
@@ -166,6 +222,12 @@ Napište program, který na výstup vypíše součet všech ujetých kilometrů.
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+ujete_kilometry = 0
+with open(r'auta.txt', encoding='utf-8') as file:
+    for radek in file:
+        kilometry = float(radek.replace(',', '.').split(' ')[-1])
+        ujete_kilometry += kilometry
+
+print(f'celkovy pocet ujetych kilometru je {ujete_kilometry}')
 ```
 </details>

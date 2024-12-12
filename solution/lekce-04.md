@@ -21,7 +21,21 @@ pohyby = [1200, -250, -800, 540, 721, -613, -222]
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+# Třetí pohyb
+print(pohyby[2])
+
+# Všechny pohyby kromě prvních dvou
+print(pohyby[2:])
+
+# Celkový počet pohybů
+print(len(pohyby))
+
+# Nejvyšší a nejnižší pohyb
+print(max(pohyby))
+print(min(pohyby))
+
+# Celkový přírůstek
+print(sum(pohyby))
 ```
 
 </details>
@@ -36,49 +50,10 @@ Mějme proměnnou s, ve které předpokládáme uložený nějaký seznam. Sesta
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
-```
-
-</details>
-
-## 3 - Rozpětí
-
-Postupujte obdobně jako v úložce Průměr, ale tentokrát sestavte výraz pro výpočet rozpětí, tedy rozdílu mezi minimální a maximální hodnotou.
-
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-Tady zatím řešení není :)
-```
-
-</details>
-
-## 4 - Střed seznamu
-
-Sestavte výraz, který vrátí číslo nacházející se přesně uprostřed v zadaném seznamu s. U seznamů liché délky je střed jasně definovaný, ovšem u seznamů sudé délky nám padne mezi dvě čísla. V takovém případě vyberte jako střed číslo blíže ke konci seznamu.
-
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-Tady zatím řešení není :)
-```
-
-</details>
-
-## 5 - Střed seznamu podruhé
-
-Sestavte vzoreček, který vrátí číslo nacházející se přesně uprostřed v zadaném seznamu s. Tentokrát však u seznamů sudé délky vyberte jako střed číslo blíž k začátku seznamu.
-
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-Tady zatím řešení není :)
+# Výpočet průměru
+s = [4, 7, 9, 10, 5]
+prumer = sum(s) / len(s)
+print(prumer)
 ```
 
 </details>
@@ -94,7 +69,9 @@ Uložte si do proměnné jmeno svoje jméno. Pomocí volání vhodných metod je
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+jmeno = "Jan Novák"
+print(jmeno.lower())
+print(jmeno.upper())
 ```
 
 </details>
@@ -136,54 +113,6 @@ Napiš program, který zjistí následující:
 
 </details>
 
-## 3 - Čísla jako text
-
-Mějme seznam celých čísel zadaných jako text
-
-```python
-hodnoty = ['12', '1', '7', '-11']
-```
-
-Potřebujeme k třetímu číslu v seznamu přičíst 4, aby výsledek vypadal takto:
-
-```python
-hodnoty = ['12', '1', '11', '-11']
-```
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-
-```
-
-</details>
-
-## 4 - Čísla v textu
-
-Máme obdobné zadání jako v předchozím cvičení, avšak tentokrát máme čísla zadána nikoliv v seznamu, ale v řetězci oddělená mezerou:
-
-```python
-hodnoty = '12.1 1.68 7.45 -11.51'
-```
-
-K poslednímu číslu v seznamu chceme přičíst 0.25 tak, aby výsledek vypadal takto
-
-```python
-hodnoty = '12.1 1.68 7.45 -11.26'
-```
-
-Určitě se vám budou hodit metody split a join.
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-
-```
-
-</details>
-
 ## Cvičení - slovníky
 ---
 
@@ -195,7 +124,12 @@ Vytvoř slovník, který reprezentuje vysvědčení. Klíč slovníku bude náze
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+vysvedceni = {
+    "český jazyk": 1,
+    "matematika": 2,
+    "dějepis": 1
+}
+print(vysvedceni)
 ```
 
 </details>
@@ -220,7 +154,13 @@ U knihy "Vrah zavolá v deset" zvyš počet prodaných kusů o 100.
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+# Přidání nové knihy
+sales["Noc, která mě zabila"] = 0
+
+# Zvýšení prodeje
+sales["Vrah zavolá v deset"] += 100
+
+print(sales)
 ```
 
 </details>
@@ -250,24 +190,12 @@ Zkontroluj, zda je číslo lístku ve slovníku. Pokud ne, vypiš text "Bohužel
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
-```
+cislo = int(input("Zadejte číslo vašeho lístku: "))
 
-</details>
-
-## 4 - Paranoidní večírek
-
-Pořadatel našeho večírku se stává stále více paranoidním a nyní rozhodl, že každý z hostů bude mít speciální heslo, které je platné jen pro něj. Seznam hostů a jejich hesel je níže. Napiš program, který nejprve zkontroluje, zda je host na seznamu, a pokud tam je, zeptá se ho na heslo a zkontroluje jeho správnost. Hostu na seznamu, který zadá správné heslo, vypíše program text: "Smíš vstoupit."
-
-```python
-passwords = {"Jiří": "tajne-heslo", "Natálie": "jeste-tajnejsi-heslo", "Klára": "nejtajnejsi-heslo"}
-```
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-Tady zatím řešení není :)
+if cislo in tombola:
+    print(f"Vyhrál jsi: {tombola[cislo]}")
+else:
+    print("Bohužel nevyhráváš nic.")
 ```
 
 </details>
