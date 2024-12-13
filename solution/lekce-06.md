@@ -20,7 +20,18 @@ U každého bodu si klidně ověř že tvůj aktuální kus kódu dělá to co m
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
+import json
+
+with open('zavod.json', encoding='utf-8') as file:
+    runners = json.load(file)
+
+finishers = []
+
+for runner in runners:
+    if runner['casy']['oficialni'] != 'DNF':
+        finishers.append(runner['jmeno'])
+
+print(finishers)
 ```
 
 </details>
@@ -75,37 +86,31 @@ Stáhněte si soubor [kurz.json](./assets/kurz.json) s výše uvedeným obsahem 
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím řešení není :)
-```
+import json
 
-</details>
+with open('in.txt', encoding='utf-8') as f:
+    data = json.load(f)
 
-## 3 - Transformace dat
+print(data['konani'][-1]['ucastnic'])
 
-Stáhněte si soubor [words.txt](./assets/words.txt) a zpracujte z něj výstupní soubor ve formátu JSON obsahující slovník. Klíče budou písmena a hodnoty seznamy slov, které začínají písmenem v klíči. Pokud na nějaké písmeno žádná slova nezačínají, tak ve výstupu toto písmeno nebude. Seřaďte tyto seznamy podle abecedy. Zajistěte, aby i klíče ve výstupním JSON souboru byly seřazeny a data byla odsazena čtyřmi mezerami pro lepší čitelnost člověkem.
+print(data['konani'][0]['koucove'][-1])
 
-Vzorový výstup: [output.json](./assets/output.json).
+print(len(data['konani']))
 
-<details>
-<summary><b>Nápověda</b></summary>
+mista = []
+for konani in data['konani']:
+    mista.append(konani['misto'])
+print(mista)
 
-- Vytvořím si prázdný slovník, do kterého budu vytvářet požadovaný výstup
-- Otevřu si vstupní soubor a budu ho načítat v cyklu po řádcích
-- Zbavím se znaku pro nový řádek v každém slově
-- Zjistím si první písmeno slova
-- Pokud písmeno není klíčem slovníku, tak tento záznam vytvořím a jako hodnotu vložím seznam s tímto slovem
-- Jinak slovo připojím na konec existujícího seznamu slov
-- Po zpracování celého vstupu seřadím seznamy slov na všech klíčích
-- Výstupní slovník zapíšu do souboru ve formátu JSON
-- V dokumentaci musím najít, jak zajistím, aby byl výstup hezky odsazovaný o 4 mezery a klíče slovníku byly seřazené
+ucastnice = 0
+for konani in data['konani']:
+    ucastnice += konani['ucastnic']
+print(ucastnice)
 
-</details>
-
-<details>
-<summary><b>Řešení</b></summary>
-
-```python
-Tady zatím řešení není :)
+koucove = set()
+for konani in data['konani']:
+    koucove.update(set(konani['koucove']))
+print(koucove)
 ```
 
 </details>
